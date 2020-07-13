@@ -13,6 +13,8 @@ jobs:
       with:
         submodules: true
         fetch-depth: 0
+    - name: Create report file
+      run: date +%s > report.txt
     - name: Commit report
       run: |
         git config --global user.name 'hhbingf'
