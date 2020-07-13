@@ -13,12 +13,6 @@ jobs:
       with:
         submodules: true
         fetch-depth: 0
-    - name: Checkout submodules
-      shell: bash
-      run: |
-        auth_header="$(git config --local --get http.https://github.com/.extraheader)"
-        git config --global http.https\:\/\/github.com\/.extraheader "$auth_header"
-        git config --local --unset-all http.https\:\/\/github.com\/.extraheader
 
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
