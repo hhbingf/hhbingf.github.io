@@ -61,14 +61,6 @@ enableEmoji = true
         title = ""
         weight = 3
       [[languages.en.menu.main]]
-        identifier = "documentation"
-        pre = ""
-        post = ""
-        name = "Docs"
-        url = "/categories/documentation/"
-        title = ""
-        weight = 4
-      [[languages.en.menu.main]]
         identifier = "about"
         pre = ""
         post = ""
@@ -81,14 +73,14 @@ enableEmoji = true
         pre = "<i class='fab fa-github fa-fw'></i>"
         post = ""
         name = ""
-        url = "https://github.com/dillonzq/LoveIt"
+        url = "https://github.com/hhbingf"
         title = "GitHub"
         weight = 6
     [languages.en.params]
       # site description
-      description = "About LoveIt Theme"
+      description = "个人博客"
       # site keywords
-      keywords = ["Theme", "Hugo"]
+      keywords = ["blog", "golang"]
       # App icon config
       [languages.en.params.app]
         # optional site title override for the app when added to an iOS home screen or Android launcher
@@ -138,7 +130,7 @@ enableEmoji = true
           # title shown in home page (HTML format is supported)
           title = ""
           # subtitle shown in home page
-          subtitle = "A Clean, Elegant but Advanced Hugo Theme"
+          subtitle = "千里之行，始于足下"
           # whether to use typeit animation for subtitle
           typeit = true
           # whether to show social links
@@ -262,13 +254,6 @@ enableEmoji = true
         title = ""
         weight = 3
       [[languages.zh-cn.menu.main]]
-        identifier = "documentation"
-        pre = ""
-        name = "文档"
-        url = "/categories/documentation/"
-        title = ""
-        weight = 4
-      [[languages.zh-cn.menu.main]]
         identifier = "about"
         pre = ""
         post = ""
@@ -281,7 +266,7 @@ enableEmoji = true
         pre = "<i class='fab fa-github fa-fw'></i>"
         post = ""
         name = ""
-        url = "https://github.com/dillonzq/LoveIt"
+        url = "https://github.com/hhbingf"
         title = "GitHub"
         weight = 6
     [languages.zh-cn.params]
@@ -338,7 +323,7 @@ enableEmoji = true
           # 主页显示的网站标题 (支持 HTML 格式)
           title = ""
           # 主页显示的网站副标题
-          subtitle = "一个简洁、优雅且高效的 Hugo 主题"
+          subtitle = "千里之行，始于足下"
           # 是否为副标题显示打字机动画
           typeit = true
           # 是否显示社交账号
@@ -386,17 +371,7 @@ enableEmoji = true
     # 移动端导航栏模式 ("fixed", "normal", "auto")
     mobileMode = "auto"
     # 页面头部导航栏标题配置
-    [params.header.title]
-      # LOGO 的 URL
-      logo = ""
-      # 标题名称
-      name = "LoveIt"
-      # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
-      pre = "<i class='far fa-kiss-wink-heart fa-fw'></i>"
-      # 你可以在名称 (允许 HTML 格式) 之后添加其他信息, 例如图标
-      post = ""
-      # 是否为标题显示打字机动画
-      typeit = false
+
 
   # 页面底部信息配置
   [params.footer]
@@ -507,7 +482,7 @@ enableEmoji = true
       Whatsapp = false
       Pinterest = false
       Tumblr = false
-      HackerNews = true
+      HackerNews = false
       Reddit = false
       VK = false
       Buffer = false
@@ -533,9 +508,9 @@ enableEmoji = true
       enable = true
       # Disqus 评论系统设置 (https://disqus.com/)
       [params.page.comment.disqus]
-        enable = false
+        # enable = true
         # Disqus 的 shortname，用来在文章中启用 Disqus 评论系统
-        shortname = ""
+        shortname = "hhbingf"
       # Gitalk 评论系统设置 (https://github.com/gitalk/gitalk)
       [params.page.comment.gitalk]
         enable = false
@@ -711,7 +686,6 @@ enableEmoji = true
       taskList = true
       typographer = true
     [markup.goldmark.renderer]
-      # whether to use HTML tags directly in the document
       # 是否在文档中直接使用 HTML 标签
       unsafe = true
   # 目录设置
