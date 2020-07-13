@@ -13,6 +13,14 @@ jobs:
       with:
         submodules: true
         fetch-depth: 0
+    - name: Commit report
+      run: |
+        git config --global user.name 'hhbingf'
+        git config --global user.email 'hhbingf@users.noreply.github.com'
+        git remote set-url origin https://x-access-token:${{ secrets.BLOG }}@github.com/$GITHUB_REPOSITORY
+        git checkout "${GITHUB_REF:11}"
+        git commit -am "Automated report"
+        git push
 
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
