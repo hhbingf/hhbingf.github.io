@@ -1,2 +1,0 @@
-# hhbingf.github.io
-myblogs
