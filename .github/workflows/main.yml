@@ -13,10 +13,6 @@ jobs:
       with:
         submodules: true
         fetch-depth: 0
-    - name: Commit report
-      run: |
-        git config --global user.name 'hhbingf'
-        git config --global user.email 'hhbingf@foxmail.com'
 
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
@@ -29,7 +25,7 @@ jobs:
 
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
-      with:
+      env:
         GITHUB_TOKEN: ${{ secrets.BLOG }}
         PUBLISH_BRANCH: master
         PUBLISH_DIR: ./public
