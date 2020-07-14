@@ -17,7 +17,7 @@ jobs:
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
       with:
-        hugo-version: '0.67.1'
+        hugo-version: 'latest'
         extended: true
 
     - name: Build
@@ -27,5 +27,8 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-        # publish_branch: master
+        publish_branch: master
         publish_dir: ./public
+        external_repository: hhbingf.github.io
+        user_name: hhbingf
+        user_email: hhbingf@foxmail.com
