@@ -29,6 +29,6 @@ jobs:
         github_token: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         publish_branch: master
         publish_dir: ./public
-        external_repository: hhbingf.github.io
+        # external_repository: hhbingf.github.io
         user_name: hhbingf
         user_email: hhbingf@foxmail.com
