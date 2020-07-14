@@ -20,19 +20,6 @@ jobs:
         hugo-version: 'latest'
         extended: true
 
-    - name: Setup Hexo env
-      env:
-        ACTION_DEPLOY_KEY: ${{ secrets.BLOG }}
-      run: |
-        # set up private key for deploy
-        mkdir -p ~/.ssh/
-        echo "$ACTION_DEPLOY_KEY" > ~/.ssh/id_rsa
-        chmod 600 ~/.ssh/id_rsa
-        ssh-keyscan github.com >> ~/.ssh/known_hosts
-        # set git infomation
-        git config --global user.name 'hhbingf'
-        git config --global user.email 'hhbingf@foxmail.com'
-
     - name: Build
       run: hugo --minify
 
@@ -42,3 +29,5 @@ jobs:
         github_token: ${{ secrets.BLOG }}
         publish_branch: master
         publish_dir: ./public
+      env:
+        github_token: ${{ secrets.BLOG }}
